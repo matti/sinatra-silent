@@ -16,6 +16,8 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 
+  config.order = :random
+
   config.after do
     subject.stop! if subject.respond_to? :stop!
   end
