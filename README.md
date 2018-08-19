@@ -1,5 +1,7 @@
 # sinatra-silent
 
+[![Build Status](https://travis-ci.org/matti/sinatra-silent.svg?branch=master)](https://travis-ci.org/matti/sinatra-silent)
+
 Silences Sinatra
 
     set :silent_sinatra, true
@@ -13,4 +15,3 @@ Silences Sinatra
 ## development
 
     rake
-    rake parallel:spec
