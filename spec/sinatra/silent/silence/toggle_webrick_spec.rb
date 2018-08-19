@@ -19,6 +19,7 @@ RSpec.describe Sinatra do
     expect {
       subject.stop!
     }.not_to output(/WEBrick::HTTPServer#start done/).to_stderr_from_any_process
+    # }.to output(/WEBrick::HTTPServer#start done/).to_stderr_from_any_process
 
     subject.set :silent_webrick, true
     expect {
